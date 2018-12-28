@@ -24,7 +24,6 @@ if (!pia.user && !pia.password) {
 
   dcObj.sonarr.links = dcObj.sonarr.links.filter((link) => link !== 'transmission');
   dcObj.couchpotato.links = dcObj.couchpotato.links.filter((link) => link !== 'transmission');
-  dcObj.couchpotatoprerelease.links = dcObj.couchpotatoprerelease.links.filter((link) => link !== 'transmission');
 }
 else if (transmission.user && transmission.password) {
   dcObj.transmission.environment.push('TRANSMISSION_RPC_USERNAME=${TRANSMISSION_USER}');
